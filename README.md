@@ -13,7 +13,7 @@ index.html                     # 全部内容：About / Projects / Resume / Publ
 assets/css/style.css           # 全站样式（深色主题，单文件）
 assets/js/script.js            # 滚动进度、导航高亮、入场动画、回到顶部
 assets/images/
-  avatar.svg                   # 头像 + favicon
+  avatar.svg                   # 顶部品牌图标 + favicon
   projects/*.png               # 项目配图（仓库真实截图 / 生成的示意图）
 .nojekyll                      # 跳过 Jekyll 构建，按静态文件直接发布
 ```
@@ -21,12 +21,22 @@ assets/images/
 ## 页面结构
 
 - **顶部导航**：`About / Projects / Resume / Papers / Contact` 锚点跳转，滚动时自动高亮当前区块
-- **About**：头像、简介、四个统计数字
+- **About**：姓名、两段简介、两个按钮（不放头像和统计数字，首屏更轻）
 - **Projects**：博客式纵向列表，每条 = 左图 + 右侧标题/摘要/技术标签。8 个项目按
   `Detection / AI Agent / Web` 分类，全部在一屏滚动内，没有分页也没有筛选器
 - **Resume**：视觉检测 / 工程两条时间线 + 技术栈标签
 - **Publications**：三篇目标检测方向论文，标题用仓库 README 中的正式英文标题，附代码链接
 - **Contact**：邮箱、GitHub、方向
+
+## 背景动画
+
+`.bg-fx` 里三个 `.orb` 光球（暖黄 / 紫 / 青），固定在视口，用 `translate3d` + `scale`
+做 20~32 秒的缓慢漂移，`filter: blur(72px)` 柔化。要点：
+
+- 层级：`.bg-fx` 是 `z-index: 0`，`.page` 是 `z-index: 1`，光晕不会盖住内容
+- 只动 `transform`，不触发布局和重绘；`prefers-reduced-motion` 下动画自动关闭
+- 700px 以下隐藏第三个光球并把 blur 降到 56px，减少移动端 GPU 压力
+- 想调强弱就改三个 `.orb-*` 里 `radial-gradient` 的 alpha（当前 0.28 / 0.24 / 0.17）
 
 ## 改内容
 

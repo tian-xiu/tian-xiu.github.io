@@ -19,6 +19,12 @@
 
   <div class="scroll-progress" data-progress></div>
 
+  <div class="bg-fx" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+  </div>
+
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="#about" aria-label="回到顶部">
@@ -41,24 +47,17 @@
     <!-- ================= ABOUT ================= -->
     <section class="hero" id="about">
 
-      <div class="hero-inner">
-        <img class="hero-avatar" src="./assets/images/avatar.svg" alt="王红臣 头像">
-
-        <div>
-          <p class="eyebrow">Computer Vision · Deep Learning</p>
-          <h1>王红臣</h1>
-          <p class="role">计算机视觉工程师</p>
-        </div>
-      </div>
+      <p class="eyebrow">Computer Vision · LLM Agents</p>
+      <h1>王红臣</h1>
 
       <p class="lead">
-        方向是计算机视觉，主要做目标检测与视觉模型落地。从检测模型的结构改进，
-        到训练、导出、实时推理的完整链路，都有可运行的开源实现；工程上也做过
-        直播弹幕驱动的虚拟主播、实时牌面识别和可交付的运营后台。
+        从计算机视觉到 Agent，我做的事基本都在一条链路上：模型怎么训、怎么导出、
+        怎么实时推理，最后怎么接进一个真能用的产品。检测模型改过结构，虚拟主播和
+        运营后台也是从零搭到能跑。
       </p>
 
       <p class="lead">
-        我的习惯是先把链路打通，再逐段优化：数据进得来、模型跑得动、结果看得见、系统扛得住。
+        我的习惯是先让整条链路跑通，再一段段抠细节。能用只是起点，好用才算做完。
       </p>
 
       <div class="hero-actions">
@@ -70,13 +69,6 @@
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
           GitHub
         </a>
-      </div>
-
-      <div class="facts">
-        <div class="fact"><b>8</b><span>收录项目</span></div>
-        <div class="fact"><b>14</b><span>公开仓库</span></div>
-        <div class="fact"><b>3</b><span>检测模型</span></div>
-        <div class="fact"><b>4</b><span>可运行系统</span></div>
       </div>
 
     </section>
