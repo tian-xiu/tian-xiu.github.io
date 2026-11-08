@@ -9,7 +9,7 @@
 ## 结构
 
 ```
-index.html                     # 全部内容：About / Projects / Resume / Contact
+index.html                     # 全部内容：About / Projects / Resume / Publications / Contact
 assets/css/style.css           # 全站样式（深色主题，单文件）
 assets/js/script.js            # 滚动进度、导航高亮、入场动画、回到顶部
 assets/images/
@@ -20,11 +20,12 @@ assets/images/
 
 ## 页面结构
 
-- **顶部导航**：`About / Projects / Resume / Contact` 锚点跳转，滚动时自动高亮当前区块
+- **顶部导航**：`About / Projects / Resume / Papers / Contact` 锚点跳转，滚动时自动高亮当前区块
 - **About**：头像、简介、四个统计数字
 - **Projects**：博客式纵向列表，每条 = 左图 + 右侧标题/摘要/技术标签。8 个项目按
-  `Research / AI Agent / Web` 分类，全部在一屏滚动内，没有分页也没有筛选器
-- **Resume**：研究 / 工程两条时间线 + 技术栈标签
+  `Detection / AI Agent / Web` 分类，全部在一屏滚动内，没有分页也没有筛选器
+- **Resume**：视觉检测 / 工程两条时间线 + 技术栈标签
+- **Publications**：三篇目标检测方向论文，标题用仓库 README 中的正式英文标题，附代码链接
 - **Contact**：邮箱、GitHub、方向
 
 ## 改内容
@@ -44,6 +45,10 @@ git push
   - 缩略图统一按 `16 / 10` 比例裁切（`object-fit: cover`），原图比例不必强求
 - **改简介**：搜 `class="lead"`
 - **改统计数字**：搜 `class="facts"`
+- **改论文**：搜 `class="pub reveal"`，每条 `<li class="pub">` 是一篇。
+  - 编号：`<span class="pub-no">01</span>`
+  - 作者行是可选的（`class="pub-authors"`），没有确切作者信息时整行删掉即可
+  - 链接文字目前只有 `Code`；有 DOI / PDF 时在同一个 `pub-links` 里再加一个 `<a>`
 - **换头像**：替换 `assets/images/avatar.svg`（同时作为 favicon）
 - **改主题色**：`style.css` 顶部 `:root` 里的 `--orange-yellow-crayola` / `--vegas-gold`
 

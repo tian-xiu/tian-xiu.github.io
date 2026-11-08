@@ -679,6 +679,79 @@ body::before {
 }
 
 /*-----------------------------------*\
+  #PUBLICATIONS
+\*-----------------------------------*/
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 0 20px;
+  padding: 22px 26px 20px;
+  background: var(--eerie-black-2);
+  border: var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.pub:hover {
+  border-color: hsla(45, 100%, 72%, 0.28);
+  background: var(--eerie-black-1);
+  transform: translateY(-2px);
+}
+
+.pub-no {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--vegas-gold);
+  padding-top: 7px;
+}
+
+.pub-title {
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--white-1);
+  letter-spacing: -0.005em;
+}
+
+.pub-authors {
+  margin-top: 7px;
+  font-size: 0.82rem;
+  color: var(--text-gray);
+}
+
+.pub-desc {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--light-gray-70);
+  max-width: 780px;
+}
+
+.pub-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+}
+
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: var(--vegas-gold);
+  transition: color var(--transition);
+}
+
+.pub-links a:hover { color: var(--orange-yellow-crayola); }
+
+/*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
 
@@ -731,7 +804,8 @@ body::before {
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--light-gray);
-  word-break: break-all;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 /*-----------------------------------*\
@@ -861,6 +935,16 @@ body::before {
   }
 
   .section { padding-top: 58px; }
+
+  .pub {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 18px 20px;
+  }
+
+  .pub-no { padding-top: 0; }
+
+  .pub-title { font-size: 0.95rem; }
 
   .post {
     grid-template-columns: 1fr;
