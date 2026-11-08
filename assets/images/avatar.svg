@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img">
+  <title>tian-xiu</title>
+  <rect width="160" height="160" rx="36" fill="#2b2b2c"/>
+  <rect x="0.75" y="0.75" width="158.5" height="158.5" rx="35.25" fill="none" stroke="#ffdb70" stroke-opacity="0.3" stroke-width="1.5"/>
+  <path d="M46 58 H114" stroke="#ffdb70" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="80" y="86" text-anchor="middle" dominant-baseline="central" font-family="Poppins, system-ui, -apple-system, sans-serif" font-size="62" font-weight="500" fill="#ffdb70">T</text>
+  <circle cx="128" cy="126" r="5" fill="#ffdb70" fill-opacity="0.85"/>
+</svg>
