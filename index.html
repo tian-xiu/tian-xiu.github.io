@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="tian-xiu — 计算机视觉与 LLM Agent 工程。伪装目标检测、遥感小目标检测、实时对话系统与全栈后台。">
-  <meta name="theme-color" content="#1e1e1f">
+  <meta name="theme-color" content="#121212">
   <title>tian-xiu · AI Engineer & Researcher</title>
   <link rel="icon" type="image/svg+xml" href="./assets/images/avatar.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,571 +17,503 @@
 
 <body>
 
-  <main>
+  <div class="scroll-progress" data-progress></div>
 
-    <aside class="sidebar" data-sidebar>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#about" aria-label="回到顶部">
+        <img src="./assets/images/avatar.svg" alt="tian-xiu">
+        <span>tian-xiu</span>
+      </a>
 
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar.svg" alt="tian-xiu" width="84">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="tian-xiu">tian-xiu</h1>
-
-          <p class="title">AI Engineer · Researcher</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:3197939577@qq.com" class="contact-link">3197939577@qq.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-              <a href="https://github.com/tian-xiu" class="contact-link" target="_blank" rel="noopener">@tian-xiu</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="code-slash-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Focus</p>
-              <address>Computer Vision · LLM Agents</address>
-            </div>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/tian-xiu" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="mailto:3197939577@qq.com" class="social-link" aria-label="Email">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <div class="main-content">
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
+      <nav class="nav" aria-label="页面导航">
+        <a href="#about" class="active">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
       </nav>
+    </div>
+  </header>
 
-      <article class="about  active" data-page="about">
+  <main class="page">
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+    <!-- ================= ABOUT ================= -->
+    <section class="hero" id="about">
 
-        <section class="about-text">
-          <p>
-            我做计算机视觉与 LLM Agent 的工程落地。研究方向是伪装目标检测与遥感小目标检测，
-            相关成果以 AdaS-Net、FGMNet、STD-YOLO 三个 PyTorch 项目开源；工程上更关心模型怎么
-            真正跑起来——从直播弹幕驱动的虚拟主播，到实时牌面识别，再到能交付的运营后台。
-          </p>
+      <div class="hero-inner">
+        <img class="hero-avatar" src="./assets/images/avatar.svg" alt="tian-xiu 头像">
 
-          <p>
-            我的习惯是先把链路打通，再逐段优化：数据进得来、模型跑得动、结果看得见、系统扛得住。
-            这个站点收录了我目前在 GitHub 上公开的主要项目，按研究、Agent 与工程三类整理。
-          </p>
-        </section>
+        <div>
+          <p class="eyebrow">Computer Vision · LLM Agents</p>
+          <h1>tian-xiu</h1>
+          <p class="role">AI Engineer &amp; Researcher</p>
+        </div>
+      </div>
 
-        <section class="service">
+      <p class="lead">
+        我做计算机视觉与 LLM Agent 的工程落地。研究方向是伪装目标检测与遥感小目标检测，
+        相关成果以 AdaS-Net、FGMNet、STD-YOLO 三个 PyTorch 项目开源；工程上更关心模型怎么
+        真正跑起来——从直播弹幕驱动的虚拟主播，到实时牌面识别，再到能交付的运营后台。
+      </p>
 
-          <h3 class="h3 service-title">What I do</h3>
+      <p class="lead">
+        我的习惯是先把链路打通，再逐段优化：数据进得来、模型跑得动、结果看得见、系统扛得住。
+      </p>
 
-          <ul class="service-list">
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">
+          浏览项目
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/tian-xiu" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          GitHub
+        </a>
+      </div>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="computer vision icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Computer Vision</h4>
-                <p class="service-item-text">
-                  伪装目标检测、遥感小目标检测、检测与分割模型的训练与调优。
-                </p>
-              </div>
-            </li>
+      <div class="facts">
+        <div class="fact"><b>8</b><span>收录项目</span></div>
+        <div class="fact"><b>14</b><span>公开仓库</span></div>
+        <div class="fact"><b>3</b><span>论文实现</span></div>
+        <div class="fact"><b>4</b><span>可运行系统</span></div>
+      </div>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="agent icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">LLM Agents</h4>
-                <p class="service-item-text">
-                  对话编排、意图路由与状态机，把模型接进有实时性要求的业务链路。
-                </p>
-              </div>
-            </li>
+    </section>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="multimodal icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Speech & Multimodal</h4>
-                <p class="service-item-text">
-                  情感语音合成与 ASR/TTS 串联，让文本决策变成可听的输出。
-                </p>
-              </div>
-            </li>
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="backend icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend & Deploy</h4>
-                <p class="service-item-text">
-                  FastAPI、Jinja2 服务端渲染、Linux 部署与日常运维。
-                </p>
-              </div>
-            </li>
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="zh">项目</span>
+      </div>
+      <div class="section-rule"></div>
+      <p class="section-note">
+        按研究、Agent、Web 三类整理，向下滚动即可看全部；每一条都配了仓库里的真实截图或架构图。
+      </p>
 
-          </ul>
+      <div class="posts">
 
-        </section>
-
-      </article>
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Research</h3>
+        <!-- 1 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/AdaS-Net" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/adas-net.png" alt="AdaS-Net 网络结构图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-research">Research</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>PyTorch</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/AdaS-Net" target="_blank" rel="noopener">AdaS-Net</a></h3>
+            <p class="post-desc">
+              伪装目标检测。Swin Transformer 主干建立长程语义表示，结构感知金字塔解码器（SAPD）与
+              感受野上下文聚合（RCA）补回被下采样抹掉的边界细节，按「看—增强—重建」三阶段推进。
+            </p>
+            <p class="post-tech">Swin Transformer · SAPD · RCA</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/AdaS-Net" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
           </div>
+        </article>
 
-          <ol class="timeline-list">
+        <!-- 2 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/FGMNet" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/fgmnet.png" alt="FGMNet 网络结构图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-research">Research</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>PyTorch</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/FGMNet" target="_blank" rel="noopener">FGMNet</a></h3>
+            <p class="post-desc">
+              频域引导的门控 Mamba 网络。用离散小波变换抽取多尺度高频分量，把主干下采样过程中丢失的
+              边界信息重新注入；FAM 模块自适应捕捉各向同性与各向异性空间线索。
+            </p>
+            <p class="post-tech">Mamba · DWT · 频域先验</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/FGMNet" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
+          </div>
+        </article>
 
+        <!-- 3 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/STD" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/std-yolo.png" alt="STD-YOLO 框架图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-research">Research</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>PyTorch</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/STD" target="_blank" rel="noopener">STD-YOLO</a></h3>
+            <p class="post-desc">
+              改进 YOLOv8 的遥感小目标舰船检测。新增小目标检测层、改造 SPPF、引入 CARAFE 上采样，
+              用增强的信息关联机制缓解深层特征丢失，降低复杂背景下的漏检与误检。
+            </p>
+            <p class="post-tech">YOLOv8 · CARAFE · 多尺度关联</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/STD" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/VirtualStreamer-Agent" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/virtualstreamer-ui.png" alt="虚拟主播主界面截图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-agent">AI Agent</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>Python</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/VirtualStreamer-Agent" target="_blank" rel="noopener">VirtualStreamer-Agent</a></h3>
+            <p class="post-desc">
+              虚拟主播 AI 助手：直播弹幕实时采集 → LangGraph 状态机做意图路由与决策 → 情感语音播报，
+              另配一套运营后台管理场次、人设与算法看板。上图是实际运行的桌面端。
+            </p>
+            <p class="post-tech">LangGraph · Qwen · 情感 TTS</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/VirtualStreamer-Agent" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <span class="post-star">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.4 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+                4
+              </span>
+            </p>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/LiveStream-Agent" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/livestream-agent.png" alt="实时直播链路示意图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-agent">AI Agent</span>
+              <span>2025</span>
+              <span class="dot"></span>
+              <span>Python</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/LiveStream-Agent" target="_blank" rel="noopener">LiveStream-Agent</a></h3>
+            <p class="post-desc">
+              上一代实时虚拟主播实现，也是 VirtualStreamer 的链路原型：弹幕理解、模型决策与语音合成
+              被串成一条低延迟闭环，先把「能实时响应」跑通，再谈效果优化。
+            </p>
+            <p class="post-tech">Python · LLM · Speech</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/LiveStream-Agent" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/huanlemajiang" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/huanlemajiang.png" alt="麻将牌面识别示意图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-agent">AI Agent</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>Python</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/huanlemajiang" target="_blank" rel="noopener">huanlemajiang</a></h3>
+            <p class="post-desc">
+              实时麻将助手。PyAutoGUI 抓屏幕画面，YOLOv8 识别牌面并用模板匹配兜底，策略模块根据手牌
+              给出打牌建议，customtkinter 做桌面 GUI。
+            </p>
+            <p class="post-tech">YOLOv8 · OpenCV · customtkinter</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/huanlemajiang" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/LLM-Driven-Dialogue-System" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/dialogue-system.png" alt="对话状态机示意图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-agent">AI Agent</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>Python</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/LLM-Driven-Dialogue-System" target="_blank" rel="noopener">LLM-Driven-Dialogue-System</a></h3>
+            <p class="post-desc">
+              面向任务的对话框架。用 LangGraph 组织状态流转，Qwen 做意图路由，把 chat / robot / query
+              三类请求拆到独立分支处理，FastAPI 对外提供服务。
+            </p>
+            <p class="post-tech">LangGraph · FastAPI · Qwen</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/LLM-Driven-Dialogue-System" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="post reveal">
+          <a class="post-thumb" href="https://github.com/tian-xiu/admin-platform" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/admin-dashboard-cover.png" alt="云枢运营后台仪表盘截图" loading="lazy">
+          </a>
+          <div class="post-body">
+            <p class="post-meta">
+              <span class="chip chip-web">Web</span>
+              <span>2026</span>
+              <span class="dot"></span>
+              <span>Python</span>
+            </p>
+            <h3><a href="https://github.com/tian-xiu/admin-platform" target="_blank" rel="noopener">云枢运营后台</a></h3>
+            <p class="post-desc">
+              FastAPI + Jinja2 服务端渲染的零构建管理后台，覆盖仪表盘、经营分析、订单与用户管理、
+              渠道归因。图表以内联 SVG 手写，不依赖前端工程链，可直接在内网部署。
+            </p>
+            <p class="post-tech">FastAPI · Jinja2 · SQLite</p>
+            <p class="post-foot">
+              <a class="post-link" href="https://github.com/tian-xiu/admin-platform" target="_blank" rel="noopener">
+                查看仓库
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="projects-foot">
+        还有一些早期学习项目没放进来，可以去
+        <a href="https://github.com/tian-xiu?tab=repositories" target="_blank" rel="noopener">GitHub 仓库列表</a>
+        看全部 14 个公开仓库。
+      </p>
+
+    </section>
+
+    <!-- ================= RESUME ================= -->
+    <section class="section" id="resume">
+
+      <div class="section-head">
+        <h2>Resume</h2>
+        <span class="zh">经历与技术栈</span>
+      </div>
+      <div class="section-rule"></div>
+
+      <div class="resume-grid">
+
+        <div>
+          <h3 class="block-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Research
+          </h3>
+
+          <ol class="timeline">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Camouflaged Object Detection</h4>
-              <span>AdaS-Net · FGMNet</span>
-              <p class="timeline-text">
+              <h4>伪装目标检测</h4>
+              <span class="where">AdaS-Net · FGMNet</span>
+              <p>
                 针对目标与背景高度相似的场景，分别从结构感知与频域引导两个角度建模边界，
                 缓解边界模糊与结构恢复不完整的问题。
               </p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Remote Sensing Small Target Detection</h4>
-              <span>STD-YOLO</span>
-              <p class="timeline-text">
+              <h4>遥感小目标检测</h4>
+              <span class="where">STD-YOLO</span>
+              <p>
                 面向遥感图像中的小目标舰船检测，用增强的信息关联机制降低复杂背景下的漏检与误检。
               </p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Real-time Interactive Systems</h4>
-              <span>Virtual Streamer · LiveStream</span>
-              <p class="timeline-text">
+              <h4>实时交互系统</h4>
+              <span class="where">Virtual Streamer · LiveStream</span>
+              <p>
                 把弹幕理解、模型决策与情感语音串成低延迟闭环，并配套运营侧的管理与任务调度。
               </p>
             </li>
-
           </ol>
+        </div>
 
-        </section>
+        <div>
+          <h3 class="block-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            Engineering
+          </h3>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="code-slash-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Engineering</h3>
-          </div>
-
-          <ol class="timeline-list">
-
+          <ol class="timeline">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">LLM Agent 工程化</h4>
-              <span>2026</span>
-              <p class="timeline-text">
+              <h4>LLM Agent 工程化</h4>
+              <span class="where">LangGraph · Qwen</span>
+              <p>
                 以 LangGraph 状态机组织对话流程，结合 Qwen 做意图路由，把对话、工具调用与
                 语音播报拆成可观测的节点。
               </p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">服务端渲染后台</h4>
-              <span>2026</span>
-              <p class="timeline-text">
-                云枢运营后台使用 FastAPI + Jinja2，零前端构建，图表以内联 SVG 手写，
-                便于在内网环境直接部署。
+              <h4>服务端渲染后台</h4>
+              <span class="where">FastAPI · Jinja2</span>
+              <p>
+                云枢运营后台零前端构建，图表以内联 SVG 手写，便于在内网环境直接部署。
               </p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">视觉模型部署</h4>
-              <span>YOLOv8 · PyTorch</span>
-              <p class="timeline-text">
+              <h4>视觉模型部署</h4>
+              <span class="where">YOLOv8 · PyTorch</span>
+              <p>
                 从训练、导出到实时推理的完整链路，覆盖 GPU 环境配置与推理性能调优。
               </p>
             </li>
-
           </ol>
+        </div>
 
-        </section>
+        <div style="grid-column: 1 / -1;">
+          <h3 class="block-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg>
+            Tech stack
+          </h3>
 
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Tech stack</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="92">92%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">PyTorch / Computer Vision</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">LLM / Agent</h5>
-                <data value="86">86%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 86%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">FastAPI / Backend</h5>
-                <data value="84">84%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 84%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Linux / Deployment</h5>
-                <data value="78">78%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 78%;"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <article class="portfolio" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Research</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>AI Agent</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Research</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>AI Agent</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web</button>
-              </li>
-
-            </ul>
-
+          <div class="stack-group">
+            <p class="stack-label">Languages</p>
+            <div class="stack">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Bash</span>
+              <span>JavaScript</span>
+            </div>
           </div>
 
-          <ul class="project-list">
+          <div class="stack-group">
+            <p class="stack-label">Vision &amp; Models</p>
+            <div class="stack">
+              <span>PyTorch</span>
+              <span>YOLOv8</span>
+              <span>OpenCV</span>
+              <span>Transformers</span>
+              <span>Swin Transformer</span>
+              <span>Mamba</span>
+            </div>
+          </div>
 
-            <li class="project-item  active" data-filter-item data-category="research">
-              <a href="https://github.com/tian-xiu/AdaS-Net" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/adas-net.svg" alt="AdaS-Net" loading="lazy">
-                </figure>
-                <h3 class="project-title">AdaS-Net</h3>
-                <p class="project-category">Research · 伪装目标检测</p>
-              </a>
-            </li>
+          <div class="stack-group">
+            <p class="stack-label">Agents &amp; Backend</p>
+            <div class="stack">
+              <span>LangGraph</span>
+              <span>FastAPI</span>
+              <span>Jinja2</span>
+              <span>SQLite</span>
+              <span>Redis</span>
+              <span>Docker</span>
+            </div>
+          </div>
 
-            <li class="project-item  active" data-filter-item data-category="research">
-              <a href="https://github.com/tian-xiu/FGMNet" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/fgmnet.svg" alt="FGMNet" loading="lazy">
-                </figure>
-                <h3 class="project-title">FGMNet</h3>
-                <p class="project-category">Research · 频域引导 Mamba</p>
-              </a>
-            </li>
+          <div class="stack-group">
+            <p class="stack-label">Speech</p>
+            <div class="stack">
+              <span>ASR</span>
+              <span>情感 TTS</span>
+              <span>音频处理</span>
+            </div>
+          </div>
+        </div>
 
-            <li class="project-item  active" data-filter-item data-category="research">
-              <a href="https://github.com/tian-xiu/STD" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/std.svg" alt="STD-YOLO" loading="lazy">
-                </figure>
-                <h3 class="project-title">STD-YOLO</h3>
-                <p class="project-category">Research · 遥感小目标</p>
-              </a>
-            </li>
+      </div>
 
-            <li class="project-item  active" data-filter-item data-category="ai agent">
-              <a href="https://github.com/tian-xiu/VirtualStreamer-Agent" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/virtualstreamer.svg" alt="VirtualStreamer-Agent" loading="lazy">
-                </figure>
-                <h3 class="project-title">VirtualStreamer-Agent</h3>
-                <p class="project-category">AI Agent · 虚拟主播</p>
-              </a>
-            </li>
+    </section>
 
-            <li class="project-item  active" data-filter-item data-category="ai agent">
-              <a href="https://github.com/tian-xiu/huanlemajiang" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/huanlemajiang.svg" alt="huanlemajiang" loading="lazy">
-                </figure>
-                <h3 class="project-title">Huanle Mahjong</h3>
-                <p class="project-category">AI Agent · 实时牌面识别</p>
-              </a>
-            </li>
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
 
-            <li class="project-item  active" data-filter-item data-category="ai agent">
-              <a href="https://github.com/tian-xiu/LiveStream-Agent" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/livestream.svg" alt="LiveStream-Agent" loading="lazy">
-                </figure>
-                <h3 class="project-title">LiveStream-Agent</h3>
-                <p class="project-category">AI Agent · 实时直播</p>
-              </a>
-            </li>
+      <div class="section-head">
+        <h2>Contact</h2>
+        <span class="zh">联系</span>
+      </div>
+      <div class="section-rule"></div>
 
-            <li class="project-item  active" data-filter-item data-category="ai agent">
-              <a href="https://github.com/tian-xiu/LLM-Driven-Dialogue-System" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/llm-dialogue.svg" alt="LLM-Driven-Dialogue-System" loading="lazy">
-                </figure>
-                <h3 class="project-title">LLM Dialogue</h3>
-                <p class="project-category">AI Agent · 任务型对话</p>
-              </a>
-            </li>
+      <div class="contact-grid">
 
-            <li class="project-item  active" data-filter-item data-category="web">
-              <a href="https://github.com/tian-xiu/admin-platform" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/covers/admin-platform.svg" alt="admin-platform" loading="lazy">
-                </figure>
-                <h3 class="project-title">云枢运营后台</h3>
-                <p class="project-category">Web · FastAPI 服务端渲染</p>
-              </a>
-            </li>
+        <a class="contact-card" href="mailto:3197939577@qq.com">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+          </div>
+          <div>
+            <p>Email</p>
+            <strong>3197939577@qq.com</strong>
+          </div>
+        </a>
 
-          </ul>
+        <a class="contact-card" href="https://github.com/tian-xiu" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </div>
+          <div>
+            <p>GitHub</p>
+            <strong>@tian-xiu</strong>
+          </div>
+        </a>
 
-        </section>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+          </div>
+          <div>
+            <p>Focus</p>
+            <strong>Computer Vision · LLM Agents</strong>
+          </div>
+        </div>
 
-      </article>
+      </div>
 
-      <article class="contact" data-page="contact">
+      <footer class="footer">
+        <span>© 2026 tian-xiu. 本站基于开源模板 vcard-personal-portfolio 改造。</span>
+        <a href="https://github.com/tian-xiu/tian-xiu.github.io" target="_blank" rel="noopener">站点源码</a>
+      </footer>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Get in touch</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="mail-outline" style="font-size: 32px; color: #ffdb70;"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Email</h4>
-                <p class="service-item-text">
-                  <a href="mailto:3197939577@qq.com" style="color: inherit;">3197939577@qq.com</a>
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="logo-github" style="font-size: 32px; color: #ffdb70;"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">GitHub</h4>
-                <p class="service-item-text">
-                  <a href="https://github.com/tian-xiu" target="_blank" rel="noopener" style="color: inherit;">github.com/tian-xiu</a>
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-          <p class="about-text" style="margin-top: 24px;">
-            项目合作、技术交流或论文复现问题，欢迎直接发邮件，或在对应仓库提 issue。
-          </p>
-
-        </section>
-
-      </article>
-
-    </div>
+    </section>
 
   </main>
 
-  <script src="./assets/js/script.js"></script>
+  <button class="to-top" data-to-top aria-label="回到顶部">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 
