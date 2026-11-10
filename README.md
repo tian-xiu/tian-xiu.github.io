@@ -134,12 +134,46 @@ FastAPI + Jinja2 服务端渲染的零构建管理后台，覆盖仪表盘、经
    面向遥感图像中的小目标舰船检测，改进 YOLOv8 的小目标检测层、SPPF 与上采样方式，增强多尺度信息关联，降低复杂背景下的漏检与误检。
    [Code](https://github.com/tian-xiu/STD)
 
+## Writing · 技术笔记
+
+CSDN 上从大一的课程笔记写到现在的模型拆解，共 **83 篇 / 8.6 万阅读**，站内按年份倒序归档：
+[blog.csdn.net/qq_45688164](https://blog.csdn.net/qq_45688164)
+
+与项目直接对应的几篇（机器鸭仿真、LiveStream-Agent、欢乐麻将、GraphOmni-Agent、工业视觉巡检、PyQt6 课程表）在页面上带 `项目` 标记。
+
 ## Contact · 联系
 
 - **Email**：[3197939577@qq.com](mailto:3197939577@qq.com)
 - **GitHub**：[@tian-xiu](https://github.com/tian-xiu)
+- **CSDN**：[@qq_45688164](https://blog.csdn.net/qq_45688164)
 - **Focus**：Computer Vision · Object Detection
 
 ---
 
 © 2026 王红臣. 本站基于开源模板 [vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio) 改造 · [站点源码](https://github.com/tian-xiu/tian-xiu.github.io)
+
+---
+
+## 维护说明（技术）
+
+页面是纯静态 HTML，没有构建步骤。改完提交，Pages 约 1 分钟内重新发布。
+
+```
+index.html                     # 全部内容：About / Projects / Resume / Publications / Writing / Contact
+assets/css/style.css           # 全站样式（深色主题，单文件）
+assets/js/script.js            # 滚动进度、导航高亮、入场动画、回到顶部
+assets/images/projects/*.png   # 项目配图（仓库真实截图 / 生成的示意图）
+.nojekyll                      # 跳过 Jekyll 构建，按静态文件直接发布
+```
+
+- **改项目**：`index.html` 里搜 `class="post reveal"`，每条 `<article class="post">` 是一个项目；
+  分类标签用 `chip-research`（青绿）/ `chip-agent`（紫）/ `chip-web`（琥珀）
+- **改文章列表**：搜 `class="year-row"`，每个年份一个 `<div class="year-row">`，内部
+  `<ul class="wlist">` 的每个 `<li>` 是一篇；左侧年份旁的篇数在 `<em>` 里，增删条目后要同步改
+  - 数据来自 CSDN 接口：
+    `https://blog.csdn.net/community/home-api/v1/get-business-list?page=1&size=100&businessType=blog&username=qq_45688164`
+    （请求需带 Cookie，否则会被安全验证页拦截）
+- **改论文**：搜 `class="pub reveal"`
+- **改主题色**：`style.css` 顶部 `:root` 里的 `--orange-yellow-crayola` / `--vegas-gold`
+
+本地预览直接双击 `index.html` 即可；字体走 Google Fonts，断网时回退到系统字体，布局不受影响。
